@@ -13,14 +13,29 @@ def main():
     pass
 def isDivisibleBy(numerator, denominator):
     numerate=str(numerator)
-    demoninate=str(denominator)
+    denominate=str(denominator)
     if numerate.isdigit():
         if denominate.isdigit():
+            if int(numerate)%int(denominate) !=0:
+                return 'Dividing ' + str(numerator) +' by ' +str(denominator)+ ' has a remainder.'
             else:
-                print False, 'numbers only please'
+                return 'Dividing '+ str(numerator)+ ' by '+str(denominator)+' does not have a remainder.'
 
+        else:
+            return 'Both arguments must be numeric.'
 
+    else:
+        return 'Both Arguments must be numeric.'
 
-isDivisibleBy(1,2)
+def test_isDivisibleBy():
+    #test to see if letter numerator works
+    print isDivisibleBy('q',7)
+    #test to see if letter denominator works
+    print isDivisibleBy(7,'d')
+    #test to see if both numbers with remainder works
+    print isDivisibleBy('7',8)
+    #test to see if both numbers without remainder works
+    print isDivisibleBy(1,1)
+test_isDivisibleBy()
 if __name__ == '__main__':
     main()
