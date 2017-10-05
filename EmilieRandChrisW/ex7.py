@@ -6,14 +6,14 @@ from sys import argv
 
 def isItTrue(testValue):
     if len(str(testValue)) <=4 :
-        return str(testValue)+' is True.'
+        return str(testValue)+' is False.'
     else:
-        return str(testValue)+ ' is False'
+        return str(testValue)+ ' is True'
 
 def test_isItTrue():
-    #test if true
-    print isItTrue('1')
     #test if false
+    print isItTrue('1')
+    #test if true
     print isItTrue('Thing')
 #test_isItTrue()
 #sys.exit()
