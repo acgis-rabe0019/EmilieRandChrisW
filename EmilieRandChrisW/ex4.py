@@ -11,9 +11,7 @@
 
 def main():
     pass
-#the 4 lowest numbers that run the below code are are:1, 2,3,12
-
-
+#the 4 lowest numbers that run the below code are are: 1, 2, 3, 12
 
 if __name__ == '__main__':
     main()
@@ -34,7 +32,12 @@ def whatIsMyVar(myVar):
             myVar -=2
             return myVar
 
+def test_whatIsMyVar():
+    print "Expect: 5 Actual: " + str(whatIsMyVar(1))
+    print "Expect: 4 Actual: " + str(whatIsMyVar(2))
+    print "Expect: 2.0 Actual: " + str(whatIsMyVar(3))
+    print "Expect: 10 Actual: " + str(whatIsMyVar(12))
 
-
-
-
+test_whatIsMyVar()
+if __name__ == '__main__':
+    main()
