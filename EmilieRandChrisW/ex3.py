@@ -13,7 +13,6 @@ def main():
 
 def isPointOnLine(x,y,m,b):
     calc=m*x+b
-    print calc
     if calc==y:
         return True
     else:
