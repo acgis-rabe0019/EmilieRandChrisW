@@ -2,4 +2,4 @@
 
 Chris works on 1,2,5,7
 
-Emilie does 3,4,6
+Emilie works on 3,4,6
